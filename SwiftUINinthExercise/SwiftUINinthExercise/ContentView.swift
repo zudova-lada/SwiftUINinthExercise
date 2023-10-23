@@ -42,7 +42,7 @@ struct ContentView: View {
                 position = CGSize(width: 0, height: 0)
             })
         )
-        .animation(.spring(), value: self.position)
+        .animation(.spring(dampingFraction: 0.6), value: self.position)
 
     }
 }
